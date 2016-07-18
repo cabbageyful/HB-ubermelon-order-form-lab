@@ -40,7 +40,7 @@
 
         <p>Place your orders here! You know you want to.</p>
 
-        <form>
+        <form action="https://ubermelon-order-form.herokuapp.com/process">
             <label for="first-name">First Name:</label>
             <input type="text" name="firstname" id="first-name"><br>
 
@@ -56,8 +56,26 @@
                 <option value="canary">Canary</option>
             </select>
 
-            
+            <label for="quantity">Quantity:</label>
+            <input type="text" name="quantity" id="quantity"><br>
 
+            Delivery Time:
+            <label><input type="radio" name="time" value="am">AM</input></label>
+            <label><input type="radio" name="time" value="pm">PM</input></label>
+            <label><input type="radio" name="time" value="wat">Wat</input></label><br>
+
+            Returning Customer:
+            <label><input type="radio" name="returning-customer" value="yes">Yes</input></label>            
+            <label><input type="radio" name="returning-customer" value="no">No</input></label><br>
+
+            Statistics:
+            <label><input type="checkbox" name="stats" value"dog">Dog</label>
+            <label><input type="checkbox" name="stats" value"cat">Cat</label>
+            <label><input type="checkbox" name="stats" value"hedgehog">Hedgehog</label>
+            <label><input type="checkbox" name="stats" value"balloonicorn">Balloonicorn</label>
+            <label><input type="checkbox" name="stats" value"yak">Yak</label><br>
+
+            <input type="submit">
 
         </form>
     </body>
